@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * The Counter Component
+ */
 class Counter extends React.Component {
   constructor(props) {
     super(props);
@@ -23,8 +26,8 @@ class Counter extends React.Component {
     return (
       <div className="counter">
         <h4 className="count">{this.state.counter}</h4>
-        <span onClick={this.handleDecrement}>Decrement</span>
-        <span onClick={this.handleIncrement}>Increment</span>
+        <span className="decrement" onClick={this.handleDecrement}>Decrement</span>
+        <span className="increment" onClick={this.handleIncrement}>Increment</span>
       </div>
     );
   }
